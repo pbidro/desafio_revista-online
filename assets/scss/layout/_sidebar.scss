@@ -1,0 +1,52 @@
+
+
+.sidebar {
+    width: 100%;
+    float: right;
+    
+    @include large-breakpoint{
+        display: none;
+    }
+
+
+    &__items {
+        width: 100%;
+        border-bottom: 1px solid gray;
+    }
+
+
+    &__tags {
+        display:flex;
+        flex-direction: column;
+        border-bottom: 1px solid gray;
+        & ul {
+            display: flex;
+            padding: 1rem;
+            list-style: none;
+    
+    
+            & li {
+                padding: 2px 4px;
+                background-color: steelblue;
+                margin-right: 3px;
+                color: white;
+            }
+            
+        }
+
+    }
+
+
+    &__highlights {
+        margin-bottom: 50px;
+
+        & img {
+            width: 220px;
+            height: 200px;
+            padding-bottom: 2rem;
+        }
+
+    }
+
+
+}
